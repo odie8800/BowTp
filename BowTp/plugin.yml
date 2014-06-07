@@ -1,0 +1,8 @@
+name: BowTp
+author: RealJohn
+version: 1.0
+description: A plugin that allows you to teleport to the location you want using a bow & arrow!
+main: main.BowTp
+commands:
+  bowtp:
+    description: Toggles if you want to enable BowTp or not!
