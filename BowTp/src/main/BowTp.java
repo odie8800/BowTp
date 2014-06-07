@@ -61,21 +61,15 @@ public class BowTp extends JavaPlugin
 		if(args.length == 0)
 		{
 			sender.sendMessage((new StringBuilder()).append(ChatColor.RED).append("[BowTp] ").append(ChatColor.AQUA).append("/BowTp [True, False]").toString());
-		}
-		
-		else if(args[0].equalsIgnoreCase("true") || args[0].equalsIgnoreCase("t") && sender.hasPermission("bowtp.switch"))
+		} else if(args[0].equalsIgnoreCase("true") || args[0].equalsIgnoreCase("t") && sender.hasPermission("bowtp.switch"))
 		{
 			config.set("bow-teleportation", Boolean.valueOf(true));
 			sender.sendMessage((new StringBuilder()).append(ChatColor.RED).append("[BowTp] ").append(ChatColor.AQUA).append("BowTp has been enabled!").toString());
-		}
-		
-		else if(args[0].equalsIgnoreCase("false") || args[0].equalsIgnoreCase("f") && sender.hasPermission("bowtp.switch"))
+		} else if(args[0].equalsIgnoreCase("false") || args[0].equalsIgnoreCase("f") && sender.hasPermission("bowtp.switch"))
 		{
 			config.set("bow-teleportation", Boolean.valueOf(false));
 			sender.sendMessage((new StringBuilder()).append(ChatColor.RED).append("[BowTp] ").append(ChatColor.AQUA).append("BowTp has been disabled!").toString());
-		}
-		
-		else
+		} else
 		{
 			sender.sendMessage((new StringBuilder()).append(ChatColor.RED).append("[BowTp] ").append(ChatColor.AQUA).append("/BowTp [True, False]").toString());
 		}
